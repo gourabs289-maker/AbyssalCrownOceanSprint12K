@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Redesigned Ocean Sprint</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <audio id="bg-music" loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="hit-sound">
+  <source src="https://actions.google.com/sounds/v1/impacts/wood_block_thud.ogg" type="audio/ogg">
+</audio>
+
+<audio id="out-sound">
+  <source src="https://actions.google.com/sounds/v1/impacts/crash_metal.ogg" type="audio/ogg">
+</audio>
+
+<div id="game-ui">
+  <div id="hud" style="display:none;">
+    <div id="timer">0m / 12,000m</div>
+    <div id="lives" style="color: #00ff88; margin-top: 5px;">⚡ Lifelines: 3</div>
+  </div>
+
+  <div id="start-screen">
+    <div class="premium-badge">SIGNATURE EDITION</div>
+
+    <h1 id="screen-title">ABYSSAL CROWN</h1>
+    <div class="premium-subtitle">OCEAN SPRINT 12K</div>
+
+    <div class="divider-line"></div>
+
+    <p id="screen-desc">
+      Enter the golden abyss with <b>3 lifelines</b>.<br>
+      Hunt enemies, survive the deep, and conquer the <b>12,000m</b> run.<br>
+      Beyond <b>10,000m</b>, the ocean transforms into the <b>Golden Zone</b>.
+    </p>
+
+    <div class="premium-stats">
+      <div class="premium-chip">12,000m Mission</div>
+      <div class="premium-chip">Golden Finale</div>
+      <div class="premium-chip">Boss Zone Ahead</div>
+    </div>
+
+    <button id="start-btn">BEGIN THE HUNT</button>
+  </div>
+</div>
+
+<canvas id="gameCanvas"></canvas>
+
+<div id="controls" style="display:none;">
+  <div class="row">
+    <button id="btn-w" class="ctrl">▲</button>
+  </div>
+
+  <div class="row">
+    <button id="btn-a" class="ctrl">◀</button>
+    <button id="btn-s" class="ctrl">▼</button>
+    <button id="btn-d" class="ctrl">▶</button>
+  </div>
+
+  <div class="row">
+    <button id="btn-fire-desktop" class="ctrl fire-btn desktop-fire">FIRE</button>
+  </div>
+</div>
+
+<div id="mobile-controls" style="display:none;">
+  <div id="mobile-main-row">
+    <button id="mob-up" class="mobile-ctrl forward-btn">▲</button>
+    <button id="mob-down" class="mobile-ctrl backward-btn">▼</button>
+    <button id="btn-fire-mobile" class="fire-btn mobile-fire">FIRE</button>
+  </div>
+
+  <div id="mobile-side-row">
+    <button id="mob-left" class="mobile-ctrl left-btn">◀</button>
+    <button id="mob-right" class="mobile-ctrl right-btn">▶</button>
+  </div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
